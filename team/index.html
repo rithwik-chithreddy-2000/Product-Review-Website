@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <title>Meet The Team</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+        body {
+           
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            line-height: 1.5;
+            color: #f5f5f5;
+            font-size: 15px;
+            font-weight: 400;
+            overflow: hidden;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+        }
+        .heading-title {
+            margin-bottom: 100px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .heading-title h3 {
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            font-weight: normal;
+            
+        }
+        .p-top-30 {
+            padding-top: 30px;
+        }
+        .half-txt {
+            width: 60%;
+            margin: 0 auto;
+            display: inline-block;
+            line-height: 25px;
+            color: #7e7e7e;
+        }
+        .text-uppercase {
+            text-transform: uppercase;
+            font-size: 5em;
+        }
+        
+        .team-member, .team-member .team-img {
+            position: relative;
+        }
+        .team-member {
+            overflow: hidden;
+        }
+        .team-member, .team-member .team-img {
+            position: relative;
+        }
+        
+        .team-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: 0;
+            border: 20px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.90);
+            opacity: 0;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .team-member:hover .team-hover .desk {
+            top: 35%;
+        }
+        .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+            opacity: 1;
+        }
+        .team-hover .desk {
+            position: absolute;
+            top: 0%;
+            width: 350px;
+            opacity: 0;
+            -webkit-transform: translateY(-55%);
+            -ms-transform: translateY(-55%);
+            transform: translateY(-55%);
+            -webkit-transition: all 0.3s 0.2s;
+            transition: all 0.3s 0.2s;
+            padding: 0 20px;
+        }
+        .desk, .desk h4, .team-hover .s-link a {
+            text-align: center;
+            color: #222;
+        }
+        .team-member:hover .team-hover .s-link {
+            bottom: 10%;
+        }
+        .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+            opacity: 1;
+        }
+        .team-hover .s-link {
+            position: absolute;
+            bottom: 0;
+            width: 350px;
+            opacity: 0;
+            text-align: center;
+            -webkit-transform: translateY(45%);
+            -ms-transform: translateY(45%);
+            transform: translateY(45%);
+            -webkit-transition: all 0.3s 0.2s;
+            transition: all 0.3s 0.2s;
+            font-size: 35px;
+        }
+        .desk, .desk h4, .team-hover .s-link a {
+            text-align: center;
+            color: #222;
+        }
+        .team-member .s-link a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 16px;
+        }
+        .team-title {
+            position: static;
+            padding: 20px 0;
+            display: inline-block;
+            letter-spacing: 2px;
+            width: 100%;
+        }
+        .team-title h5 {
+            margin-bottom: 0px;
+            display: block;
+            text-transform: uppercase;
+        }
+        .team-title span {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #a5a5a5;
+            letter-spacing: 1px;
+        }
+            
+    </style>
+</head>
+<body background="1.jpg">
+    <div class="container" style="position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);">
+        <div class="row">
+            <div class="heading-title text-center">
+                <h3 class="text-uppercase">About Developer</h3>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGSlaSXxKJ6cA/profile-displayphoto-shrink_400_400/0/1597669860928?e=1628121600&v=beta&t=oEY2mt419gmzmoKgm4NJi_c4vtJBFkDCEeENAIhbbF4" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Hello!</h4>
+                            <p>I am a Part Time Web Developer.</p>
+                        </div>
+                        <div class="s-link">
+                            <a href="https://www.facebook.com/rithwik.chithreddy"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/rithwikchithreddy_/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/rithwik-chithreddy-7872b3198/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="font-family: 'Times New Roman', Times, serif;">Rithwik Chithreddy</h5>
+                    <span style="font-family: 'Times New Roman', Times, serif; color: #f5f5f5;">Web Designer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
